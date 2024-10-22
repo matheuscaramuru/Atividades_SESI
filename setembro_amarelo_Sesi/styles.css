@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #fee000; /* Correção para cor sólida */
+    --secondary-color: #d3d3d3; 
+    --highlight-color: #F39C12; 
+    --text-color: #333; 
+    --link-hover-color: #2C3E50;
+    --footer-bg-color: #2C3E50; 
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    box-shadow: 0 4px 2px -2px gray;
+    background-image: url('header-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--link-hover-color);
+}
+
+main {
+    padding: 30px;
+    background-color: white;
+    margin: 30px auto;
+    max-width: 1200px; /* Adiciona um limite máximo de largura */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 2px -2px gray;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: var(--highlight-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-color);
+}
+
+img.campanha {
+    width: 220px; /* Define a largura padrão para todas as imagens das campanhas */
+    height: 160px; /* Define a altura padrão para todas as imagens das campanhas */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área definida */
+    border-radius: 6px; /* Arredonda os cantos das imagens */
+    margin: 15px 0; /* Margem superior e inferior para espaçamento */
+    display: block; /* Garante que as imagens ocupem a linha completa */
+}
+
+img.campanha1 {
+    width: auto; /* Define a largura padrão para todas as imagens das campanhas */
+    height: auto; /* Define a altura padrão para todas as imagens das campanhas */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área definida */
+    border-radius: 8px; /* Arredonda os cantos das imagens */
+    margin-top: 15px; /* Margem superior para espaçamento */
+    display: block; /* Garante que a imagem ocupe a linha completa */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza a imagem horizontalmente */
+}
+
+
